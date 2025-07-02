@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-	    <meta charset="UTF-8">
-	    <title>Quiz</title>
-	</head>
-	<body>
-		<script src="Quiz.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <title>クイズ画面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .choices {
+      list-style: none;
+      padding: 0;
+    }
+    .choices li {
+      margin: 10px 0;
+    }
+    .choices button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #e0f0ff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .choices button:hover {
+      background-color: #cde8ff;
+    }
+    .navigation {
+      margin-top: 20px;
+      text-align: right;
+    }
+    .navigation button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: none;
+      background-color: #007acc;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="question">
+      問題1: 富士山の高さはどれくらい？
+    </div>
+    <ul class="choices">
+      <li><button>2,776メートル</button></li>
+      <li><button>3,776メートル</button></li>
+      <li><button>4,776メートル</button></li>
+      <li><button>5,776メートル</button></li>
+    </ul>
+    <div class="navigation">
+      <button>次へ</button>
+    </div>
+  </div>
+  <script src="Quiz.js" defer></script>
+</body>
 </html>
